@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8566A60F12BD5C92004FA3C1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8566A60E12BD5C92004FA3C1 /* Cocoa.framework */; };
+		8566A61412BD5C92004FA3C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8566A61212BD5C92004FA3C1 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8566A60C12BD5C92004FA3C1 /* OrganicUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrganicUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8566A60E12BD5C92004FA3C1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8566A61012BD5C92004FA3C1 /* OrganicUI-Info.plist */ = {isa = PBXFileReference; path = "OrganicUI-Info.plist"; sourceTree = "<group>"; };
+		8566A61112BD5C92004FA3C1 /* OrganicUI-Prefix.pch */ = {isa = PBXFileReference; path = "OrganicUI-Prefix.pch"; sourceTree = "<group>"; };
+		8566A61312BD5C92004FA3C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8566A60812BD5C92004FA3C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8566A60F12BD5C92004FA3C1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8566A5FC12BD5C92004FA3C1 = {
+			isa = PBXGroup;
+			children = (
+				8566A60312BD5C92004FA3C1 /* Classes */,
+				8566A60412BD5C92004FA3C1 /* Other Sources */,
+				8566A60512BD5C92004FA3C1 /* Resources */,
+				8566A60612BD5C92004FA3C1 /* Frameworks */,
+				8566A60D12BD5C92004FA3C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8566A60312BD5C92004FA3C1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8566A60412BD5C92004FA3C1 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				8566A61112BD5C92004FA3C1 /* OrganicUI-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		8566A60512BD5C92004FA3C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8566A61012BD5C92004FA3C1 /* OrganicUI-Info.plist */,
+				8566A61212BD5C92004FA3C1 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8566A60612BD5C92004FA3C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8566A60E12BD5C92004FA3C1 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8566A60D12BD5C92004FA3C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8566A60C12BD5C92004FA3C1 /* OrganicUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8566A60912BD5C92004FA3C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8566A60B12BD5C92004FA3C1 /* OrganicUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8566A61712BD5C92004FA3C1 /* Build configuration list for PBXNativeTarget "OrganicUI" */;
+			buildPhases = (
+				8566A60712BD5C92004FA3C1 /* Sources */,
+				8566A60812BD5C92004FA3C1 /* Frameworks */,
+				8566A60912BD5C92004FA3C1 /* Headers */,
+				8566A60A12BD5C92004FA3C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrganicUI;
+			productName = OrganicUI;
+			productReference = 8566A60C12BD5C92004FA3C1 /* OrganicUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8566A5FE12BD5C92004FA3C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = N/A;
+			};
+			buildConfigurationList = 8566A60112BD5C92004FA3C1 /* Build configuration list for PBXProject "OrganicUI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8566A5FC12BD5C92004FA3C1;
+			productRefGroup = 8566A60D12BD5C92004FA3C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8566A60B12BD5C92004FA3C1 /* OrganicUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8566A60A12BD5C92004FA3C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8566A61412BD5C92004FA3C1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8566A60712BD5C92004FA3C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8566A61212BD5C92004FA3C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8566A61312BD5C92004FA3C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8566A61512BD5C92004FA3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8566A61612BD5C92004FA3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8566A61812BD5C92004FA3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganicUI-Prefix.pch";
+				INFOPLIST_FILE = "OrganicUI-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		8566A61912BD5C92004FA3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrganicUI-Prefix.pch";
+				INFOPLIST_FILE = "OrganicUI-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8566A60112BD5C92004FA3C1 /* Build configuration list for PBXProject "OrganicUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8566A61512BD5C92004FA3C1 /* Debug */,
+				8566A61612BD5C92004FA3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8566A61712BD5C92004FA3C1 /* Build configuration list for PBXNativeTarget "OrganicUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8566A61812BD5C92004FA3C1 /* Debug */,
+				8566A61912BD5C92004FA3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8566A5FE12BD5C92004FA3C1 /* Project object */;
+}
