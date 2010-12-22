@@ -9,14 +9,40 @@
 /* Begin PBXBuildFile section */
 		8566A60F12BD5C92004FA3C1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8566A60E12BD5C92004FA3C1 /* Cocoa.framework */; };
 		8566A61412BD5C92004FA3C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8566A61212BD5C92004FA3C1 /* InfoPlist.strings */; };
+		8566A62712BD5CCB004FA3C1 /* NSColor+CGColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 8566A61C12BD5CCB004FA3C1 /* NSColor+CGColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8566A62812BD5CCB004FA3C1 /* NSColor+CGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8566A61D12BD5CCB004FA3C1 /* NSColor+CGColor.m */; };
+		8566A62912BD5CCB004FA3C1 /* ORController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8566A61E12BD5CCB004FA3C1 /* ORController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8566A62A12BD5CCB004FA3C1 /* ORController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8566A61F12BD5CCB004FA3C1 /* ORController.m */; };
+		8566A62B12BD5CCB004FA3C1 /* OrganicUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8566A62012BD5CCB004FA3C1 /* OrganicUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8566A62C12BD5CCB004FA3C1 /* ORTitleBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8566A62112BD5CCB004FA3C1 /* ORTitleBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8566A62D12BD5CCB004FA3C1 /* ORTitleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8566A62212BD5CCB004FA3C1 /* ORTitleBar.m */; };
+		8566A62E12BD5CCB004FA3C1 /* ORWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8566A62312BD5CCB004FA3C1 /* ORWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8566A62F12BD5CCB004FA3C1 /* ORWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8566A62412BD5CCB004FA3C1 /* ORWindow.m */; };
+		8566A63612BD6A32004FA3C1 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8566A63412BD6A32004FA3C1 /* Quartz.framework */; };
+		8566A63712BD6A32004FA3C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8566A63512BD6A32004FA3C1 /* QuartzCore.framework */; };
+		85DACA4D12C1AFC0008716EC /* NSBezierPath+JDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DACA4B12C1AFC0008716EC /* NSBezierPath+JDAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85DACA4E12C1AFC0008716EC /* NSBezierPath+JDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DACA4C12C1AFC0008716EC /* NSBezierPath+JDAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8566A60C12BD5C92004FA3C1 /* OrganicUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrganicUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8566A60E12BD5C92004FA3C1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		8566A61012BD5C92004FA3C1 /* OrganicUI-Info.plist */ = {isa = PBXFileReference; path = "OrganicUI-Info.plist"; sourceTree = "<group>"; };
-		8566A61112BD5C92004FA3C1 /* OrganicUI-Prefix.pch */ = {isa = PBXFileReference; path = "OrganicUI-Prefix.pch"; sourceTree = "<group>"; };
+		8566A61012BD5C92004FA3C1 /* OrganicUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrganicUI-Info.plist"; sourceTree = "<group>"; };
+		8566A61112BD5C92004FA3C1 /* OrganicUI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OrganicUI-Prefix.pch"; sourceTree = "<group>"; };
 		8566A61312BD5C92004FA3C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8566A61C12BD5CCB004FA3C1 /* NSColor+CGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+CGColor.h"; sourceTree = "<group>"; };
+		8566A61D12BD5CCB004FA3C1 /* NSColor+CGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+CGColor.m"; sourceTree = "<group>"; };
+		8566A61E12BD5CCB004FA3C1 /* ORController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORController.h; sourceTree = "<group>"; };
+		8566A61F12BD5CCB004FA3C1 /* ORController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORController.m; sourceTree = "<group>"; };
+		8566A62012BD5CCB004FA3C1 /* OrganicUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OrganicUI.h; path = Classes/OrganicUI.h; sourceTree = "<group>"; };
+		8566A62112BD5CCB004FA3C1 /* ORTitleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTitleBar.h; sourceTree = "<group>"; };
+		8566A62212BD5CCB004FA3C1 /* ORTitleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTitleBar.m; sourceTree = "<group>"; };
+		8566A62312BD5CCB004FA3C1 /* ORWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORWindow.h; sourceTree = "<group>"; };
+		8566A62412BD5CCB004FA3C1 /* ORWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORWindow.m; sourceTree = "<group>"; };
+		8566A63412BD6A32004FA3C1 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		8566A63512BD6A32004FA3C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
+		85DACA4B12C1AFC0008716EC /* NSBezierPath+JDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+JDAdditions.h"; sourceTree = "<group>"; };
+		85DACA4C12C1AFC0008716EC /* NSBezierPath+JDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+JDAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +51,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8566A60F12BD5C92004FA3C1 /* Cocoa.framework in Frameworks */,
+				8566A63612BD6A32004FA3C1 /* Quartz.framework in Frameworks */,
+				8566A63712BD6A32004FA3C1 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +73,16 @@
 		8566A60312BD5C92004FA3C1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				85DACA4B12C1AFC0008716EC /* NSBezierPath+JDAdditions.h */,
+				85DACA4C12C1AFC0008716EC /* NSBezierPath+JDAdditions.m */,
+				8566A61C12BD5CCB004FA3C1 /* NSColor+CGColor.h */,
+				8566A61D12BD5CCB004FA3C1 /* NSColor+CGColor.m */,
+				8566A61E12BD5CCB004FA3C1 /* ORController.h */,
+				8566A61F12BD5CCB004FA3C1 /* ORController.m */,
+				8566A62112BD5CCB004FA3C1 /* ORTitleBar.h */,
+				8566A62212BD5CCB004FA3C1 /* ORTitleBar.m */,
+				8566A62312BD5CCB004FA3C1 /* ORWindow.h */,
+				8566A62412BD5CCB004FA3C1 /* ORWindow.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -60,6 +98,7 @@
 		8566A60512BD5C92004FA3C1 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8566A62012BD5CCB004FA3C1 /* OrganicUI.h */,
 				8566A61012BD5C92004FA3C1 /* OrganicUI-Info.plist */,
 				8566A61212BD5C92004FA3C1 /* InfoPlist.strings */,
 			);
@@ -69,6 +108,8 @@
 		8566A60612BD5C92004FA3C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8566A63412BD6A32004FA3C1 /* Quartz.framework */,
+				8566A63512BD6A32004FA3C1 /* QuartzCore.framework */,
 				8566A60E12BD5C92004FA3C1 /* Cocoa.framework */,
 			);
 			name = Frameworks;
@@ -89,6 +130,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8566A62B12BD5CCB004FA3C1 /* OrganicUI.h in Headers */,
+				8566A62712BD5CCB004FA3C1 /* NSColor+CGColor.h in Headers */,
+				8566A62912BD5CCB004FA3C1 /* ORController.h in Headers */,
+				8566A62C12BD5CCB004FA3C1 /* ORTitleBar.h in Headers */,
+				8566A62E12BD5CCB004FA3C1 /* ORWindow.h in Headers */,
+				85DACA4D12C1AFC0008716EC /* NSBezierPath+JDAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +201,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8566A62812BD5CCB004FA3C1 /* NSColor+CGColor.m in Sources */,
+				8566A62A12BD5CCB004FA3C1 /* ORController.m in Sources */,
+				8566A62D12BD5CCB004FA3C1 /* ORTitleBar.m in Sources */,
+				8566A62F12BD5CCB004FA3C1 /* ORWindow.m in Sources */,
+				85DACA4E12C1AFC0008716EC /* NSBezierPath+JDAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +236,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -198,7 +250,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
@@ -215,8 +267,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OrganicUI-Prefix.pch";
 				INFOPLIST_FILE = "OrganicUI-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = /Users/jdrake/Projects/OrganicUI;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -234,8 +287,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OrganicUI-Prefix.pch";
 				INFOPLIST_FILE = "OrganicUI-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = /Users/jdrake/Projects/OrganicUI;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;

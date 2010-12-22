@@ -4,6 +4,22 @@
    <BuildAction
       parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "8566A60B12BD5C92004FA3C1"
+               BuildableName = "OrganicUI.framework"
+               BlueprintName = "OrganicUI"
+               ReferencedContainer = "container:OrganicUI.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug">
