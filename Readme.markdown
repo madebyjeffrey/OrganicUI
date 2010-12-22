@@ -48,19 +48,12 @@ A license hasn't been decided on, but I believe this code has the most utility w
 
 When you use it, a mention would be appreciated, although not required.
 
-Contributors
-------------
-
-Jeffrey Drake (Me)
-
-* your name here *
-
 Website
 -------
 
 ### Main site
-[http://web.me.com/iaefai/OrganicUI/][http://web.me.com/iaefai/OrganicUI/]
+[http://web.me.com/iaefai/OrganicUI/](http://web.me.com/iaefai/OrganicUI/)
 
 ### Source code
-[https://github.com/iaefai/OrganicUI][https://github.com/iaefai/OrganicUI]
+[https://github.com/iaefai/OrganicUI](https://github.com/iaefai/OrganicUI)
 
