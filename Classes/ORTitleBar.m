@@ -99,7 +99,7 @@
     [paraStyle setLineBreakMode:NSLineBreakByTruncatingTail];
     NSMutableDictionary *titleAttrs = [NSMutableDictionary dictionaryWithObjectsAndKeys:
                                        titleFont, NSFontAttributeName,
-                                       [NSColor blackColor], NSForegroundColorAttributeName,
+                                       [NSColor whiteColor], NSForegroundColorAttributeName,
                                        [[paraStyle copy] autorelease], NSParagraphStyleAttributeName,
                                        nil];
     
