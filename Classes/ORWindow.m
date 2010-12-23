@@ -108,22 +108,6 @@
     return backgroundPattern;
 }
 
-//- (void) awakeFromNib
-//{
-/*    self.ControllerStack = [NSMutableArray arrayWithCapacity: 3];
-    
-    [self pushController: [ORController blankController]];
-    
-    MainMenuController *mainMenu = [[[MainMenuController alloc] init] autorelease];
-    
-    [self pushController: mainMenu];
-    
-  */  
-    
-    
-
-//}
-
 - (BOOL) canBecomeKeyWindow
 {
     return YES;
@@ -135,81 +119,8 @@
 }
 
 - (void)dealloc {
-//    self.ControllerStack = nil;
     [backgroundPattern release];
     
     [super dealloc];
 }
-
-/*
-- (void) pushController: (ORController*) controller
-{
-    // check for initialization
-    if ([self.ControllerStack count] == 0) 
-    {
-        [self.ControllerStack addObject: controller];
-        [[self contentView] addSubview: controller.view];
-        
-        return;
-    }
-    
-    
-    ORController *controllerOut = [self.ControllerStack lastObject];
-    
-    [self.ControllerStack addObject: controller];
-    
-    // will animate out the current, and animate in the new at the same time
-    // controllerOut is assumed to be in the contentView visible 
-    
-    // add new controller to the right of the screen
-    
-    [controller.view setFrame: NSMakeRect(480, 0, 480, 480)];
-    [[self contentView] addSubview: controller.view];
-
-    [NSAnimationContext beginGrouping];
-    [[NSAnimationContext currentContext] setDuration: 0.7f];
-    
-    // slide old view out
-    [[controllerOut.view animator] setFrame: NSMakeRect(-480, 0, 480, 480)];
-    
-    // slide new view in
-    [[controller.view animator] setFrame: NSMakeRect(0, 0, 480, 480)];   
-    
-    [NSAnimationContext endGrouping];
-    
-}
-
-- (ORController*) popController
-{
-    if ([self.ControllerStack count] < 1)
-    {
-        @throw [NSException exceptionWithName: @"NoControllerToPop" reason:@"There are no more controllers to pop." userInfo: nil];
-    }
-    
-    ORController *controllerOut = [self.ControllerStack lastObject];
-    [self.ControllerStack removeLastObject];
-    
-    ORController *controllerIn = ([self.ControllerStack count] < 1
-                                ? [ORController blankController]
-                                : [self.ControllerStack lastObject]);
-    
-    [controllerIn.view setFrame: NSMakeRect(-480, 0, 480, 480)];
-    [[self contentView] addSubview: controllerIn.view];
-    
-    [controllerOut.view setFrame: NSMakeRect(0, 0, 480, 480)];
-    
-    [NSAnimationContext beginGrouping];
-    [[NSAnimationContext currentContext] setDuration: 0.7f];
-    
-    // slide old view out
-    [[controllerOut.view animator] setFrame: NSMakeRect(480, 0, 480, 480)];
-    
-    // slide new view in
-    [[controllerIn.view animator] setFrame: NSMakeRect(0, 0, 480, 480)];   
-    
-    [NSAnimationContext endGrouping];
-    
-    return controllerOut;
-}
-*/
 @end

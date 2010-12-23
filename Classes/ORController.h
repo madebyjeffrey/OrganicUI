@@ -17,6 +17,7 @@
 
 @property (retain) NSView *view;
 
-+ (ORController*) blankController;
+- (id)initWithSize: (NSSize) size;
++ (ORController*) blankControllerWithSize: (NSSize) size;
 
 @end

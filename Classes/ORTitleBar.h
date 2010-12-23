@@ -15,10 +15,15 @@
     NSButton *minimizeButton;
     NSButton *zoomButton;
     NSImage *backgroundPattern;
+	NSBezierPath *outline;
 }
 
 @property (retain) NSButton *closeButton;
 @property (retain) NSButton *minimizeButton;
 @property (retain) NSButton *zoomButton;
 @property (retain) NSImage *backgroundPattern;
+@property (retain) NSBezierPath *outline;
+
+- (void) updateOutline;
+
 @end

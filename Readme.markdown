@@ -18,6 +18,14 @@ I would like to improve this, there are two main outstanding issues:
 1.  The window buttons do not react to mouse movement.
 2.  The title bar could look a lot better.
 
+### ORNavigator
+
+#### View to transition other full views in or out
+
+ORNavigator is a view that manages a stack of controllers/views and will
+transition between additions. If you push a controller on the stack, the old one will go to the left and the new one will come in from the right. Popping a controller is the reverse.
+
+ORNavigator is in need of testing and is considered unstable right now.
 
 Supporting Classes
 ------------------
@@ -39,7 +47,7 @@ Classes not Finished
 
 ### ORController		
 
-A view manager for transitions similar to the navigation on iOS.
+An item that manages a view, used with ORNavigator. This might be better as a protocol on an NSViewController.
 
 License
 -------

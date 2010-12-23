@@ -12,6 +12,7 @@
 @implementation ORTitleBar
 
 @synthesize zoomButton, closeButton, minimizeButton, backgroundPattern;
+@synthesize outline;
 
 - (id)initWithFrame:(NSRect)frame {
     if ((self = [super initWithFrame:frame])) {
@@ -41,7 +42,8 @@
         [self addSubview: self.closeButton];
         [self addSubview: self.minimizeButton];
         [self addSubview: self.zoomButton];
-        
+     
+		[self updateOutline];
     }
     
     return self;
@@ -54,16 +56,16 @@
     [super dealloc];
 }
 
-- (void)drawRect:(NSRect)dirtyRect {
-    NSRect __frame = [self bounds];
-    
-	
-	// background might be better to be a separate object.
+// This method should be called when the window resizes
+- (void) updateOutline
+{
+	NSRect __frame = [self bounds];
+
     const int radius = 6;
     NSBezierPath *background = [NSBezierPath bezierPath];
     [background moveToPoint: NSMakePoint(0, 0)];
     [background lineToPoint: NSMakePoint(__frame.size.width, 0)];
- 
+	
     [background lineToPoint: NSMakePoint(__frame.size.width, __frame.size.height-radius)];
     [background cornerToPoint: NSMakePoint(__frame.size.width - radius, __frame.size.height) radius: radius];
     
@@ -72,18 +74,22 @@
     
     [background lineToPoint: NSMakePoint(0, 0)];
     [background closePath];
+	
+	self.outline = background;
+}
+
+- (void)drawRect:(NSRect)dirtyRect {
     
-//    NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:[NSColor colorWithDeviceRed: 0.35 green: 0.35 blue:0.35 alpha:1] 
-//                                                         endingColor: [NSColor colorWithDeviceRed: 0 green:0 blue:0 alpha:1]];
+	
 	NSGradient *gradient = [[NSGradient alloc] initWithStartingColor:[NSColor colorWithDeviceRed: 0.55 green: 0.55 blue:0.55 alpha:1] 
                                                          endingColor: [NSColor colorWithDeviceRed: 0.2 green:0.2 blue:0.2 alpha:1]];
 
-    [gradient drawInBezierPath: background  angle: 270];
+    [gradient drawInBezierPath: self.outline  angle: 270];
     [gradient release];
     
     [[NSColor colorWithDeviceRed:0.5 green:0.5 blue:0.5 alpha:1.0] setStroke];
     
-    [background stroke];
+    [self.outline stroke];
     
 
 	// The following code is borrowed from somewhere, but I forget where.
@@ -98,8 +104,8 @@
     [paraStyle setAlignment:NSCenterTextAlignment];
     [paraStyle setLineBreakMode:NSLineBreakByTruncatingTail];
     NSMutableDictionary *titleAttrs = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-                                       titleFont, NSFontAttributeName,
-                                       [NSColor whiteColor], NSForegroundColorAttributeName,
+										titleFont, NSFontAttributeName,
+										[NSColor whiteColor], NSForegroundColorAttributeName,
                                        [[paraStyle copy] autorelease], NSParagraphStyleAttributeName,
                                        nil];
     

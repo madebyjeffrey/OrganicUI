@@ -21,19 +21,24 @@
     return self;
 }
 
+- (id)initWithSize: (NSSize) size;
+{
+	return nil; // no implementation
+}
+
 - (void)dealloc {
     self.view = nil;
     
     [super dealloc];
 }
 
-+ (ORController*) blankController
++ (ORController*) blankControllerWithSize: (NSSize) size
 {
     ORController *controller = [ORController new];
  
     NSLog(@"blank controller retrieved");
     
-    NSView *_view = [[NSView alloc] initWithFrame: NSMakeRect(0,0, 480, 480)];
+    NSView *_view = [[NSView alloc] initWithFrame: NSMakeRect(0, 0, size.width, size.height)];
         
     [_view setWantsLayer: YES];
     

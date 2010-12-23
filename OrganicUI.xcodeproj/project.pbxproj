@@ -22,6 +22,8 @@
 		8566A63712BD6A32004FA3C1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8566A63512BD6A32004FA3C1 /* QuartzCore.framework */; };
 		85DACA4D12C1AFC0008716EC /* NSBezierPath+JDAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 85DACA4B12C1AFC0008716EC /* NSBezierPath+JDAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85DACA4E12C1AFC0008716EC /* NSBezierPath+JDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DACA4C12C1AFC0008716EC /* NSBezierPath+JDAdditions.m */; };
+		85F3F4D512C2B0520076AF3C /* ORNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F3F4D312C2B0520076AF3C /* ORNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85F3F4D612C2B0520076AF3C /* ORNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F3F4D412C2B0520076AF3C /* ORNavigator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		8566A63512BD6A32004FA3C1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
 		85DACA4B12C1AFC0008716EC /* NSBezierPath+JDAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath+JDAdditions.h"; sourceTree = "<group>"; };
 		85DACA4C12C1AFC0008716EC /* NSBezierPath+JDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+JDAdditions.m"; sourceTree = "<group>"; };
+		85F3F4D312C2B0520076AF3C /* ORNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORNavigator.h; sourceTree = "<group>"; };
+		85F3F4D412C2B0520076AF3C /* ORNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORNavigator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				8566A62212BD5CCB004FA3C1 /* ORTitleBar.m */,
 				8566A62312BD5CCB004FA3C1 /* ORWindow.h */,
 				8566A62412BD5CCB004FA3C1 /* ORWindow.m */,
+				85F3F4D312C2B0520076AF3C /* ORNavigator.h */,
+				85F3F4D412C2B0520076AF3C /* ORNavigator.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -136,6 +142,7 @@
 				8566A62C12BD5CCB004FA3C1 /* ORTitleBar.h in Headers */,
 				8566A62E12BD5CCB004FA3C1 /* ORWindow.h in Headers */,
 				85DACA4D12C1AFC0008716EC /* NSBezierPath+JDAdditions.h in Headers */,
+				85F3F4D512C2B0520076AF3C /* ORNavigator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +213,7 @@
 				8566A62D12BD5CCB004FA3C1 /* ORTitleBar.m in Sources */,
 				8566A62F12BD5CCB004FA3C1 /* ORWindow.m in Sources */,
 				85DACA4E12C1AFC0008716EC /* NSBezierPath+JDAdditions.m in Sources */,
+				85F3F4D612C2B0520076AF3C /* ORNavigator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
