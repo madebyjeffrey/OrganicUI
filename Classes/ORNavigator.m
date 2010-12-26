@@ -8,20 +8,28 @@
 
 #import "ORNavigator.h"
 
+#import "ORTransition.h"
 
 @implementation ORNavigator
 
-@synthesize ControllerStack;
+@synthesize controllers, root;
+
 @dynamic left, right, centre;
 
-+ (ORNavigator*) navigator: (NSSize) size
++ (ORNavigator*) navigator: (NSSize) size rootController: (ORController*) controller
 {
 	NSRect frame = { NSMakePoint(0, 0), size };
 	
 	ORNavigator *nav = [[ORNavigator alloc] initWithFrame: frame];
+	if (nav)
+	{
+		nav.root = controller;
+		[nav pushController: nav.root transition: nil];
+	}
 	
 	return [nav autorelease];
 }
+
 
 - (id) initWithFrame:(NSRect)frameRect
 {
@@ -29,8 +37,8 @@
 	
 	if (self)
 	{
-		self.ControllerStack = [NSMutableArray arrayWithCapacity: 5];
-        [self pushController: [ORController blankControllerWithSize: frameRect.size]];
+		self.controllers = [NSMutableArray arrayWithCapacity: 5];
+//
 	}
 	
 	return self;
@@ -39,8 +47,9 @@
 
 - (void) dealloc
 {
-	self.ControllerStack = nil;
+	self.controllers = nil;
 	
+	[super dealloc];
 }
 
 - (NSRect) left
@@ -69,6 +78,36 @@
 	return frame;
 }
 
+- (void) pushController:(ORController *)controller transition: (NSString*) transition
+{
+	if ((controller == self.root) && ([self.controllers count]==0))
+	{
+		controller.view.frame = self.centre;
+		[self addSubview: controller.view];
+		[self.controllers addObject: 
+		 [NSDictionary dictionaryWithObjectsAndKeys: controller, @"controller", transition, @"transition", nil]];
+		return;
+	}
+	
+	[self.controllers addObject:
+	 [NSDictionary dictionaryWithObjectsAndKeys: controller, @"controller", transition, @"transition", nil]];
+	
+	ORTransition *tran = [ORTransition transitionNamed: transition];
+	
+	tran.toView = controller.view;
+	NSDictionary *from = [self.controllers objectAtIndex: [self.controllers count]-2];
+	tran.fromView = [[from objectForKey: @"controller"] view];
+	
+	[tran performInNavigator: self];
+	
+	
+}
+
+- (ORController*) popController
+{
+	return nil;
+}
+/*
 - (void) pushController: (ORController*) controller
 {
     // check for initialization
@@ -143,5 +182,5 @@
     return controllerOut;
 }
 
-
+*/
 @end

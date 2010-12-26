@@ -45,6 +45,15 @@
 							positioned: NSWindowAbove
 							relativeTo: nil];
 		
+		CALayer *mask = [CALayer layer];
+		mask.backgroundColor = [NSColor blackColor].CGColor;
+		mask.cornerRadius = 6;
+		[mask removeFromSuperlayer];
+		
+		[[self contentView] makeBackingLayer];
+		[[self contentView] layer].mask = mask;
+		[[self contentView] layer].masksToBounds = YES;
+		
 		[self.windowTitleBar setHidden: YES];
 		
 		NSTrackingArea *titlebar = [[[NSTrackingArea alloc] initWithRect: [self.windowTitleBar frame] 
@@ -59,6 +68,11 @@
 	}
 	
 	return self;
+}
+
+- (BOOL)acceptsMouseMovedEvents
+{
+	return YES;
 }
 
 - (void)mouseEntered:(NSEvent *)theEvent

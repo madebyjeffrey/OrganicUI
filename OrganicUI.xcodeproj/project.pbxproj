@@ -24,6 +24,13 @@
 		85DACA4E12C1AFC0008716EC /* NSBezierPath+JDAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DACA4C12C1AFC0008716EC /* NSBezierPath+JDAdditions.m */; };
 		85F3F4D512C2B0520076AF3C /* ORNavigator.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F3F4D312C2B0520076AF3C /* ORNavigator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85F3F4D612C2B0520076AF3C /* ORNavigator.m in Sources */ = {isa = PBXBuildFile; fileRef = 85F3F4D412C2B0520076AF3C /* ORNavigator.m */; };
+		85FBE79312C5B194002C1290 /* ORGameWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FBE79112C5B194002C1290 /* ORGameWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85FBE79412C5B194002C1290 /* ORGameWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FBE79212C5B194002C1290 /* ORGameWindow.m */; };
+		85FBE80A12C5D30A002C1290 /* CATextLayer+autosize.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FBE80812C5D30A002C1290 /* CATextLayer+autosize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85FBE80B12C5D30A002C1290 /* CATextLayer+autosize.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FBE80912C5D30A002C1290 /* CATextLayer+autosize.m */; };
+		85FBE80D12C5D3F0002C1290 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85FBE80C12C5D3F0002C1290 /* ApplicationServices.framework */; };
+		85FBE95612C69899002C1290 /* ORTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 85FBE95412C69899002C1290 /* ORTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85FBE95712C69899002C1290 /* ORTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FBE95512C69899002C1290 /* ORTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +54,13 @@
 		85DACA4C12C1AFC0008716EC /* NSBezierPath+JDAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+JDAdditions.m"; sourceTree = "<group>"; };
 		85F3F4D312C2B0520076AF3C /* ORNavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORNavigator.h; sourceTree = "<group>"; };
 		85F3F4D412C2B0520076AF3C /* ORNavigator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORNavigator.m; sourceTree = "<group>"; };
+		85FBE79112C5B194002C1290 /* ORGameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORGameWindow.h; sourceTree = "<group>"; };
+		85FBE79212C5B194002C1290 /* ORGameWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORGameWindow.m; sourceTree = "<group>"; };
+		85FBE80812C5D30A002C1290 /* CATextLayer+autosize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATextLayer+autosize.h"; sourceTree = "<group>"; };
+		85FBE80912C5D30A002C1290 /* CATextLayer+autosize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATextLayer+autosize.m"; sourceTree = "<group>"; };
+		85FBE80C12C5D3F0002C1290 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		85FBE95412C69899002C1290 /* ORTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORTransition.h; sourceTree = "<group>"; };
+		85FBE95512C69899002C1290 /* ORTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,7 @@
 				8566A60F12BD5C92004FA3C1 /* Cocoa.framework in Frameworks */,
 				8566A63612BD6A32004FA3C1 /* Quartz.framework in Frameworks */,
 				8566A63712BD6A32004FA3C1 /* QuartzCore.framework in Frameworks */,
+				85FBE80D12C5D3F0002C1290 /* ApplicationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +92,10 @@
 		8566A60312BD5C92004FA3C1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				85FBE80812C5D30A002C1290 /* CATextLayer+autosize.h */,
+				85FBE80912C5D30A002C1290 /* CATextLayer+autosize.m */,
+				85FBE79112C5B194002C1290 /* ORGameWindow.h */,
+				85FBE79212C5B194002C1290 /* ORGameWindow.m */,
 				85DACA4B12C1AFC0008716EC /* NSBezierPath+JDAdditions.h */,
 				85DACA4C12C1AFC0008716EC /* NSBezierPath+JDAdditions.m */,
 				8566A61C12BD5CCB004FA3C1 /* NSColor+CGColor.h */,
@@ -89,6 +108,8 @@
 				8566A62412BD5CCB004FA3C1 /* ORWindow.m */,
 				85F3F4D312C2B0520076AF3C /* ORNavigator.h */,
 				85F3F4D412C2B0520076AF3C /* ORNavigator.m */,
+				85FBE95412C69899002C1290 /* ORTransition.h */,
+				85FBE95512C69899002C1290 /* ORTransition.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -117,6 +138,7 @@
 				8566A63412BD6A32004FA3C1 /* Quartz.framework */,
 				8566A63512BD6A32004FA3C1 /* QuartzCore.framework */,
 				8566A60E12BD5C92004FA3C1 /* Cocoa.framework */,
+				85FBE80C12C5D3F0002C1290 /* ApplicationServices.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +165,9 @@
 				8566A62E12BD5CCB004FA3C1 /* ORWindow.h in Headers */,
 				85DACA4D12C1AFC0008716EC /* NSBezierPath+JDAdditions.h in Headers */,
 				85F3F4D512C2B0520076AF3C /* ORNavigator.h in Headers */,
+				85FBE79312C5B194002C1290 /* ORGameWindow.h in Headers */,
+				85FBE80A12C5D30A002C1290 /* CATextLayer+autosize.h in Headers */,
+				85FBE95612C69899002C1290 /* ORTransition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +239,9 @@
 				8566A62F12BD5CCB004FA3C1 /* ORWindow.m in Sources */,
 				85DACA4E12C1AFC0008716EC /* NSBezierPath+JDAdditions.m in Sources */,
 				85F3F4D612C2B0520076AF3C /* ORNavigator.m in Sources */,
+				85FBE79412C5B194002C1290 /* ORGameWindow.m in Sources */,
+				85FBE80B12C5D30A002C1290 /* CATextLayer+autosize.m in Sources */,
+				85FBE95712C69899002C1290 /* ORTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

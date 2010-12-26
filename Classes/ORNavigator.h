@@ -10,19 +10,25 @@
 
 #import "ORController.h"
 
+
 @interface ORNavigator : NSView {
 @private
-	NSMutableArray *ControllerStack;
+	NSMutableArray *controllers;
+	ORController *root;
 }
 
-@property (retain) NSMutableArray *ControllerStack;
+@property (retain) NSMutableArray *controllers;
+@property (retain) ORController *root;
+
 @property (readonly) NSRect left;
 @property (readonly) NSRect right;
 @property (readonly) NSRect centre;
 
-+ (ORNavigator*) navigator: (NSSize) size;
++ (ORNavigator*) navigator: (NSSize) size rootController: (ORController*) controller;
 
-- (void) pushController: (ORController*) controller;
+- (void) pushController:(ORController *)controller transition: (NSString*) transition;
 - (ORController*) popController;
+
+
 
 @end

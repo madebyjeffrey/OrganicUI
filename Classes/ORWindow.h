@@ -9,6 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 #import "ORTitleBar.h"
+#import "NSColor+CGColor.h"
 
 //#import "MainMenuController.h"
 

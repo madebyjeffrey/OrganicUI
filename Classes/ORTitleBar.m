@@ -12,7 +12,31 @@
 @implementation ORTitleBar
 
 @synthesize zoomButton, closeButton, minimizeButton, backgroundPattern;
-@synthesize outline;
+@synthesize outline, buttonArea;
+
+- (BOOL)_mouseInGroup:(id)sender
+{
+	return [self mouse:
+			[self convertPoint:[[self window] mouseLocationOutsideOfEventStream]
+					  fromView:nil]
+				inRect:[self.buttonArea rect]];
+}
+
+- (BOOL)mouseDownCanMoveWindow
+{
+	return YES;
+	/*
+	([self mouse: [self convertPoint:[[self window] mouseLocationOutsideOfEventStream]
+						  fromView:nil]
+			 inRect: [self.closeButton frame]]) ||
+	([self mouse: [self convertPoint:[[self window] mouseLocationOutsideOfEventStream]
+							fromView:nil]
+		  inRect: [self.zoomButton frame]]) ||
+	([self mouse: [self convertPoint:[[self window] mouseLocationOutsideOfEventStream]
+							fromView:nil]
+		  inRect: [self.minimizeButton frame]]);
+*/
+}
 
 - (id)initWithFrame:(NSRect)frame {
     if ((self = [super initWithFrame:frame])) {
@@ -42,11 +66,43 @@
         [self addSubview: self.closeButton];
         [self addSubview: self.minimizeButton];
         [self addSubview: self.zoomButton];
+		
+		NSRect bound = [self.closeButton frame];
+		bound.size.width = [self.zoomButton frame].origin.x 
+						 + [self.zoomButton frame].size.width;
+		
+		NSTrackingArea *trackingButtons = [[NSTrackingArea alloc] initWithRect: bound
+																	   options: NSTrackingMouseEnteredAndExited | NSTrackingActiveInKeyWindow
+																		 owner: self 
+																	  userInfo: nil];
+		
+		[self addTrackingArea: trackingButtons];
+		
+		self.buttonArea = trackingButtons;
      
 		[self updateOutline];
     }
     
     return self;
+}
+
+- (void)mouseEntered:(NSEvent *)theEvent
+{
+	NSTrackingArea *area = nil;
+	
+	@try {
+		area = [theEvent trackingArea];
+		
+		if (area == self.buttonArea)
+		{
+			[self.closeButton setNeedsDisplay: YES];
+			[self.minimizeButton setNeedsDisplay: YES];
+			[self.zoomButton setNeedsDisplay: YES];
+		}
+	}
+	@catch (NSException * e) {
+		// not a tracking area event
+	}
 }
 
 - (void)dealloc {

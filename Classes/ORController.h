@@ -8,7 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import <NSColor+CGColor.h>
+#import "NSColor+CGColor.h"
 
 @interface ORController : NSObject {
 @private

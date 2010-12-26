@@ -16,6 +16,7 @@
     NSButton *zoomButton;
     NSImage *backgroundPattern;
 	NSBezierPath *outline;
+	NSTrackingArea *buttonArea;
 }
 
 @property (retain) NSButton *closeButton;
@@ -23,6 +24,7 @@
 @property (retain) NSButton *zoomButton;
 @property (retain) NSImage *backgroundPattern;
 @property (retain) NSBezierPath *outline;
+@property (retain) NSTrackingArea *buttonArea;
 
 - (void) updateOutline;
 
