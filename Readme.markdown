@@ -1,4 +1,3 @@
-
 Organic UI
 ==========
 
@@ -60,7 +59,7 @@ Website
 -------
 
 ### Main site
-[http://web.me.com/iaefai/OrganicUI/](http://web.me.com/iaefai/OrganicUI/)
+Website no longer exists. Will update when made new one.
 
 ### Source code
 [https://github.com/iaefai/OrganicUI](https://github.com/iaefai/OrganicUI)
